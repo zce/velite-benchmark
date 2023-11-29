@@ -9,6 +9,6 @@
     "build": "velite build"
   },
   "devDependencies": {
-    "velite": "file:../velite"
+    "velite": "latest"
   }
 }
