@@ -6,7 +6,6 @@ const slugify = input =>
     .replace(/\s+/g, '-')
     .replace(/[^a-z0-9-]/g, '')
 
-const icon = s.enum(['github', 'instagram', 'medium', 'twitter', 'youtube'])
 const count = s.object({ total: s.number(), posts: s.number() }).default({ total: 0, posts: 0 })
 
 const meta = s
