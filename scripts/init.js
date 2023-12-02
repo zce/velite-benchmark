@@ -30,8 +30,8 @@ const postTemplate = i =>
 ---
 title: Style Guide ${i}
 slug: style-guide-${i}
-date: 1970-01-01 00:00:00
-cover: img-${i}.jpg
+date: 1970-01-01 00:00:00${i % 3 ? `
+cover: img-${i}.jpg` : ''}
 ---
 
 Below is just abo${i}ut everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
@@ -231,11 +231,13 @@ Lorem ipsum dolor sit amet, conse${i}ctetur adipisicing elit, sed do eiusmod tem
 
 #### Wide Image
 
-![Wide Image](img-${i}-1.jpg)
+${i % 2 ? `
+![Wide Image](img-${i}-1.jpg)` : ''}
 
 #### Big Image
 
-![Big Image](img-${i}-2.jpg)
+${i % 4 ? `
+![Wide Image](img-${i}-2.jpg)` : ''}
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -243,7 +245,8 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 
-![Small Image](img-${i}-3.jpg)
+${i % 5 ? `
+![Wide Image](img-${i}-3.jpg)` : ''}
 
 Labore et dolore.
 
@@ -318,8 +321,8 @@ A note[^1]
 let count = 0
 // modify image for got a new file
 const generateNewImage = () => {
-  count = count >= 254 ? 0 : count
-  img[img.length - 1] = ++count
+  // count = count >= 254 ? 0 : count
+  // img[img.length - 1] = ++count
   return img
 }
 
