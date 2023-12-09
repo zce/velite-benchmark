@@ -57,8 +57,38 @@
 ## Usage
 
 ```shell
-$ npm install # install dependencies
-$ npm run init # init test content
-$ npm run dev # run build with watch mode
-$ npm run build # build content by velite
+$ pnpm install # install dependencies
+$ pnpm run init # init test content
+$ pnpm run dev # run build with watch mode
+$ pnpm run build # build content by velite
 ```
+
+### Issues
+
+```js
+const timeout = ms => new Promise(resolve => setTimeout(resolve, ms))
+
+Array.from({ length: 10 }).map(async () => {
+  const begin = performance.now()
+  await timeout(1000) // demo time-consuming operation
+  console.log(performance.now() - begin) // expect 1000ms ~ 1050ms
+})
+```
+
+When the number of executions is small, the difference between the actual result and the expected result is not significant.
+
+However, when the number of executions is large, the difference between the actual result and the expected result is significant.
+
+```js
+Array.from({ length: 10000 }).map(async () => {
+  const begin = performance.now()
+  await timeout(1000) // demo time-consuming operation
+  console.log(performance.now() - begin) // actual longer and longer
+})
+```
+
+I know that the reason is that the lot of microtasks in the event loop will affect the execution time of the next task. This is also normal.
+
+But I want to know how to get the expected result. Ignoring the impact of task queues and accurately monitoring the time spent on a time-consuming operation.
+
+Thanks for your help.

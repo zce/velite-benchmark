@@ -4,10 +4,10 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-devDependencies:
+dependencies:
   velite:
-    specifier: file:../velite
-    version: file:../velite
+    specifier: latest
+    version: 0.1.0-alpha.47
 
 packages:
 
@@ -16,7 +16,7 @@ packages:
     requiresBuild: true
     dependencies:
       tslib: 2.6.2
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/android-arm64@0.19.8:
@@ -25,7 +25,7 @@ packages:
     cpu: [arm64]
     os: [android]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/android-arm@0.19.8:
@@ -34,7 +34,7 @@ packages:
     cpu: [arm]
     os: [android]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/android-x64@0.19.8:
@@ -43,7 +43,7 @@ packages:
     cpu: [x64]
     os: [android]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/darwin-arm64@0.19.8:
@@ -52,7 +52,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/darwin-x64@0.19.8:
@@ -61,7 +61,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/freebsd-arm64@0.19.8:
@@ -70,7 +70,7 @@ packages:
     cpu: [arm64]
     os: [freebsd]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/freebsd-x64@0.19.8:
@@ -79,7 +79,7 @@ packages:
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-arm64@0.19.8:
@@ -88,7 +88,7 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-arm@0.19.8:
@@ -97,7 +97,7 @@ packages:
     cpu: [arm]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-ia32@0.19.8:
@@ -106,7 +106,7 @@ packages:
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-loong64@0.19.8:
@@ -115,7 +115,7 @@ packages:
     cpu: [loong64]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-mips64el@0.19.8:
@@ -124,7 +124,7 @@ packages:
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-ppc64@0.19.8:
@@ -133,7 +133,7 @@ packages:
     cpu: [ppc64]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-riscv64@0.19.8:
@@ -142,7 +142,7 @@ packages:
     cpu: [riscv64]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-s390x@0.19.8:
@@ -151,7 +151,7 @@ packages:
     cpu: [s390x]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/linux-x64@0.19.8:
@@ -160,7 +160,7 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/netbsd-x64@0.19.8:
@@ -169,7 +169,7 @@ packages:
     cpu: [x64]
     os: [netbsd]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/openbsd-x64@0.19.8:
@@ -178,7 +178,7 @@ packages:
     cpu: [x64]
     os: [openbsd]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/sunos-x64@0.19.8:
@@ -187,7 +187,7 @@ packages:
     cpu: [x64]
     os: [sunos]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/win32-arm64@0.19.8:
@@ -196,7 +196,7 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/win32-ia32@0.19.8:
@@ -205,7 +205,7 @@ packages:
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@esbuild/win32-x64@0.19.8:
@@ -214,7 +214,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-darwin-arm64@0.33.0:
@@ -225,7 +225,7 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-darwin-arm64': 1.0.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-darwin-x64@0.33.0:
@@ -236,7 +236,7 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-darwin-x64': 1.0.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-libvips-darwin-arm64@1.0.0:
@@ -245,7 +245,7 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-libvips-darwin-x64@1.0.0:
@@ -254,7 +254,7 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-libvips-linux-arm64@1.0.0:
@@ -264,7 +264,7 @@ packages:
     os: [linux]
     libc: [glibc]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-libvips-linux-arm@1.0.0:
@@ -274,7 +274,7 @@ packages:
     os: [linux]
     libc: [glibc]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-libvips-linux-s390x@1.0.0:
@@ -284,7 +284,7 @@ packages:
     os: [linux]
     libc: [glibc]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-libvips-linux-x64@1.0.0:
@@ -294,7 +294,7 @@ packages:
     os: [linux]
     libc: [glibc]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-libvips-linuxmusl-arm64@1.0.0:
@@ -304,7 +304,7 @@ packages:
     os: [linux]
     libc: [musl]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-libvips-linuxmusl-x64@1.0.0:
@@ -314,7 +314,7 @@ packages:
     os: [linux]
     libc: [musl]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-linux-arm64@0.33.0:
@@ -326,7 +326,7 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linux-arm64': 1.0.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-linux-arm@0.33.0:
@@ -338,7 +338,7 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linux-arm': 1.0.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-linux-s390x@0.33.0:
@@ -350,7 +350,7 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linux-s390x': 1.0.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-linux-x64@0.33.0:
@@ -362,7 +362,7 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linux-x64': 1.0.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-linuxmusl-arm64@0.33.0:
@@ -374,7 +374,7 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linuxmusl-arm64': 1.0.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-linuxmusl-x64@0.33.0:
@@ -386,7 +386,7 @@ packages:
     requiresBuild: true
     optionalDependencies:
       '@img/sharp-libvips-linuxmusl-x64': 1.0.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-wasm32@0.33.0:
@@ -396,7 +396,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@emnapi/runtime': 0.44.0
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-win32-ia32@0.33.0:
@@ -405,7 +405,7 @@ packages:
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /@img/sharp-win32-x64@0.33.0:
@@ -414,7 +414,7 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
   /color-convert@2.0.1:
@@ -422,18 +422,18 @@ packages:
     engines: {node: '>=7.0.0'}
     dependencies:
       color-name: 1.1.4
-    dev: true
+    dev: false
 
   /color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
-    dev: true
+    dev: false
 
   /color-string@1.9.1:
     resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
-    dev: true
+    dev: false
 
   /color@4.2.3:
     resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==}
@@ -441,12 +441,12 @@ packages:
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.1
-    dev: true
+    dev: false
 
   /detect-libc@2.0.2:
     resolution: {integrity: sha512-UX6sGumvvqSaXgdKGUsgZWqcUyIXZ/vZTrlRT/iobiKhGL0zL4d3osHj3uqllWJK+i+sixDS/3COVEOFbupFyw==}
     engines: {node: '>=8'}
-    dev: true
+    dev: false
 
   /esbuild@0.19.8:
     resolution: {integrity: sha512-l7iffQpT2OrZfH2rXIp7/FkmaeZM0vxbxN9KfiCwGYuZqzMg/JdvX26R31Zxn/Pxvsrg3Y9N6XTcnknqDyyv4w==}
@@ -476,18 +476,18 @@ packages:
       '@esbuild/win32-arm64': 0.19.8
       '@esbuild/win32-ia32': 0.19.8
       '@esbuild/win32-x64': 0.19.8
-    dev: true
+    dev: false
 
   /is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
-    dev: true
+    dev: false
 
   /lru-cache@6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
-    dev: true
+    dev: false
 
   /semver@7.5.4:
     resolution: {integrity: sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==}
@@ -495,7 +495,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-    dev: true
+    dev: false
 
   /sharp@0.33.0:
     resolution: {integrity: sha512-99DZKudjm/Rmz+M0/26t4DKpXyywAOJaayGS9boEn7FvgtG0RYBi46uPE2c+obcJRtA3AZa0QwJot63gJQ1F0Q==}
@@ -525,30 +525,29 @@ packages:
       '@img/sharp-wasm32': 0.33.0
       '@img/sharp-win32-ia32': 0.33.0
       '@img/sharp-win32-x64': 0.33.0
-    dev: true
+    dev: false
 
   /simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
     dependencies:
       is-arrayish: 0.3.2
-    dev: true
+    dev: false
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     requiresBuild: true
-    dev: true
+    dev: false
     optional: true
 
-  /yallist@4.0.0:
-    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
-    dev: true
-
-  file:../velite:
-    resolution: {directory: ../velite, type: directory}
-    name: velite
+  /velite@0.1.0-alpha.47:
+    resolution: {integrity: sha512-Daee2NZ8cnJUemWtuuIpOxUTjPRRnWjwCSb8Mg0OM52vZmDWOtZoXGCxoVPyCLCtGzN0ww6eQwUcVh3meE95BA==}
     engines: {node: ^18.17.0 || >=20.3.0}
     hasBin: true
     dependencies:
       esbuild: 0.19.8
       sharp: 0.33.0
-    dev: true
+    dev: false
+
+  /yallist@4.0.0:
+    resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: false
