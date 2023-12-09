@@ -1,3 +1,4 @@
+// @ts-check
 import { defineConfig, s } from 'velite'
 
 const slugify = input =>
@@ -22,7 +23,7 @@ export default defineConfig({
     data: '.velite',
     assets: 'public/static',
     base: '/static/',
-    filename: '[name]-[hash:6].[ext]',
+    name: '[name]-[hash:6].[ext]',
     ignore: ['.yml', '.md', '.mdx'],
     clean: true
   },
@@ -81,7 +82,6 @@ export default defineConfig({
           tags: s.array(s.string()).default([]),
           meta: meta,
           metadata: s.metadata(),
-          summary: s.summary(),
           excerpt: s.excerpt(),
           content: s.markdown()
         })
@@ -89,6 +89,7 @@ export default defineConfig({
     }
   },
   prepare: ({ categories, tags, posts }) => {
+    // @ts-ignore
     const docs = posts.filter(i => process.env.NODE_ENV !== 'production' || !i.draft)
 
     // missing categories, tags from posts or courses inlined
