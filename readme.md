@@ -4,48 +4,51 @@
 
 ## Results
 
-### Cold Build
+500 markdown files, 50 mdx files, 1409 image assets, 51 yaml files.
 
-51 categories, 300 tags, 50 pages, 500 posts, 1409 assets
+### Cold Build [<7s]
 
-**9000ms - 10000ms**
+```sh
+➜  velite-benchmark git:(main) ✗ pnpm run build
 
-```shell
-[VELITE] output entry file in '.velite' in 0.92ms
-[VELITE] output 51 categories, 300 tags, 50 pages, 500 posts in 40.36ms
-[VELITE] output 1409 assets in 421.71ms
-[VELITE] build finished in 9298.56ms
+> @velite/benchmark@0.1.0 build /Users/zce/Local/velite-benchmark
+> velite build
+
+[VELITE] output entry file in '.velite' in 0.64ms
+[VELITE] output 51 categories, 300 tags, 50 pages, 500 posts in 24.20ms
+[VELITE] output 1409 assets in 276.12ms
+[VELITE] build finished in 6457.71ms
 ```
 
-### Rebuild
+### Watch Rebuild [<100ms]
 
-```shell
+```sh
 ➜  velite-benchmark git:(main) ✗ pnpm run dev
 
 > @velite/benchmark@0.1.0 dev /Users/zce/Local/velite-benchmark
 > velite dev
 
-[VELITE] output entry file in '.velite' in 0.93ms
-[VELITE] output 300 tags, 51 categories, 50 pages, 500 posts in 40.67ms
-[VELITE] output 1409 assets in 262.63ms
-[VELITE] build finished in 9259.37ms
+[VELITE] output entry file in '.velite' in 0.61ms
+[VELITE] output 300 tags, 51 categories, 50 pages, 500 posts in 23.40ms
+[VELITE] output 1409 assets in 166.44ms
+[VELITE] build finished in 5490.11ms
 [VELITE] watching for changes in 'content'
 [VELITE] changed: 'content/categories/journal-0.yml', rebuilding...
-[VELITE] output 51 categories, 300 tags, 50 pages, 500 posts in 23.92ms
-[VELITE] output 0 assets in 0.58ms
-[VELITE] rebuild finished in 55.44ms
+[VELITE] output 300 tags, 50 pages, 500 posts, 51 categories in 20.56ms
+[VELITE] output 0 assets in 1.01ms
+[VELITE] rebuild finished in 52.09ms
 [VELITE] changed: 'content/pages/page-0.mdx', rebuilding...
-[VELITE] output 51 categories, 300 tags, 50 pages, 500 posts in 23.16ms
-[VELITE] output 0 assets in 0.58ms
-[VELITE] rebuild finished in 62.31ms
-[VELITE] changed: 'content/posts/post-124.md', rebuilding...
-[VELITE] output 51 categories, 300 tags, 50 pages, 500 posts in 21.12ms
-[VELITE] output 0 assets in 0.41ms
-[VELITE] rebuild finished in 92.73ms
+[VELITE] output 51 categories, 300 tags, 500 posts, 50 pages in 19.99ms
+[VELITE] output 0 assets in 0.89ms
+[VELITE] rebuild finished in 51.97ms
+[VELITE] changed: 'content/posts/post-43.md', rebuilding...
+[VELITE] output 51 categories, 300 tags, 50 pages, 500 posts in 24.81ms
+[VELITE] output 0 assets in 0.23ms
+[VELITE] rebuild finished in 87.67ms
 [VELITE] changed: 'content/tags/all-in-one.yml', rebuilding...
-[VELITE] output 51 categories, 300 tags, 50 pages, 500 posts in 21.92ms
-[VELITE] output 0 assets in 0.55ms
-[VELITE] rebuild finished in 68.40ms
+[VELITE] output 51 categories, 50 pages, 500 posts, 300 tags in 17.49ms
+[VELITE] output 0 assets in 0.83ms
+[VELITE] rebuild finished in 66.92ms
 ```
 
 ### Environment
