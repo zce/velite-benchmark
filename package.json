@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "init": "node scripts/init.js",
-    "dev": "velite dev",
-    "build": "velite build"
+    "postinstall": "node scripts/init.js",
+    "dev": "velite dev --verbose",
+    "build": "velite build --verbose"
   },
   "dependencies": {
     "velite": "latest"
